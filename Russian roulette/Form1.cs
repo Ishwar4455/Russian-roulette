@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Russian_roulette
+{
+    public partial class Form1 : Form
+    {
+
+
+        donali G1 = new donali();// Defining the object (G1) of the Game Class
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+
+            {
+                //Calling Load function from Game Class
+                btn_Load.Enabled = false; // Disabling Load button
+                btn_Spin.Enabled = true;
+                btn_Shoot.Enabled = false;
+                btn_Shootaway.Enabled = false;
+
+            }
+
+
+        }
+    }
+}
