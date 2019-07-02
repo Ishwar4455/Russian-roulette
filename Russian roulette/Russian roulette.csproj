@@ -82,7 +82,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rohit.jpg" />
+    <EmbeddedResource Include="Resources\rohit.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ee.jpg" />
@@ -91,19 +91,46 @@
     <None Include="Resources\sohmi.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\india.jpg" />
+    <EmbeddedResource Include="Resources\india.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image001.gif" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bobyyy.jpg" />
+    <EmbeddedResource Include="Resources\bobyyy.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\india1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hahhah.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gun-cocking-02.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spin.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\spin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bobby.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jonn.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\shootaway.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovee.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

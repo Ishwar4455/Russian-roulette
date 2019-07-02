@@ -1,6 +1,6 @@
 ﻿namespace Russian_roulette
 {
-    partial class Form1
+    partial class Restart
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Restart));
             this.btn_Load = new System.Windows.Forms.Button();
             this.btn_Spin = new System.Windows.Forms.Button();
             this.btn_Shoot = new System.Windows.Forms.Button();
             this.btn_Shootaway = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.playagain = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,6 +62,7 @@
             this.btn_Spin.TabIndex = 1;
             this.btn_Spin.Text = "Spin";
             this.btn_Spin.UseVisualStyleBackColor = false;
+            this.btn_Spin.Click += new System.EventHandler(this.Btn_Spin_Click);
             // 
             // btn_Shoot
             // 
@@ -85,6 +88,7 @@
             this.btn_Shootaway.TabIndex = 3;
             this.btn_Shootaway.Text = "Shootaway";
             this.btn_Shootaway.UseVisualStyleBackColor = false;
+            this.btn_Shootaway.Click += new System.EventHandler(this.Btn_Shootaway_Click);
             // 
             // pictureBox1
             // 
@@ -95,19 +99,32 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // playagain
+            // 
+            this.playagain.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.playagain.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playagain.ForeColor = System.Drawing.Color.Red;
+            this.playagain.Location = new System.Drawing.Point(374, 442);
+            this.playagain.Name = "playagain";
+            this.playagain.Size = new System.Drawing.Size(121, 48);
+            this.playagain.TabIndex = 5;
+            this.playagain.Text = "Restart";
+            this.playagain.UseVisualStyleBackColor = false;
+            this.playagain.Click += new System.EventHandler(this.Playagain_Click);
+            // 
+            // Restart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Russian_roulette.Properties.Resources.rohit;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1091, 657);
+            this.Controls.Add(this.playagain);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Shootaway);
             this.Controls.Add(this.btn_Shoot);
             this.Controls.Add(this.btn_Spin);
             this.Controls.Add(this.btn_Load);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Restart";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -121,6 +138,7 @@
         private System.Windows.Forms.Button btn_Shoot;
         private System.Windows.Forms.Button btn_Shootaway;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button playagain;
     }
 }
 
